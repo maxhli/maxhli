@@ -16,8 +16,6 @@ func myhandler(w http.ResponseWriter, req *http.Request) {
 func RootHandler(res http.ResponseWriter, req *http.Request) {
 	file, _ := ioutil.ReadFile("templates/index.tmpl.html")
 
-	//file, _ := ioutil.ReadFile("templates/index.tmpl.html")
-
 	res.Write(file)
 }
 
