@@ -1,0 +1,6 @@
+{
+  "rootPath": "github.com/maxhli/maxhli",
+  "heroku": {
+    "goVersion": "go1.9"
+  }
+}

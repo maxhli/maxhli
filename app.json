@@ -1,0 +1,14 @@
+{
+  "name": "maxhli",
+  "description": "Database for Go Programming Language",
+  "keywords": [
+    "maxhli",
+    "go",
+    "sample",
+    "example"
+  ],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/maxhli/maxhli",
+  "website": "http://github.com/maxhli/maxhli",
+  "repository": "http://github.com/maxhli/maxhli"
+}
