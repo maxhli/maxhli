@@ -4,14 +4,15 @@ package main
 import (
 	"log"
 	"net/http"
-	"fmt"
+	_ "fmt"
 	"os"
 	"io/ioutil"
 )
 
-func myhandler(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintln(w, "hehhehehehheheheheheh!")
-}
+func myhandler(res http.ResponseWriter, req *http.Request) {
+	file, _ := ioutil.ReadFile("templates/new.tmpl.html")
+
+	res.Write(file)}
 
 func RootHandler(res http.ResponseWriter, req *http.Request) {
 	file, _ := ioutil.ReadFile("templates/index.tmpl.html")
@@ -29,7 +30,7 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/",
 		http.FileServer(http.Dir("static"))))
 
-	http.HandleFunc("/hello", myhandler)
+	http.HandleFunc("/new", myhandler)
 
 
 	port := os.Getenv("PORT")

@@ -31,3 +31,24 @@
     width: 8em;
     text-align: right;
 }
+
+.background-color-lightgray {
+  background-color: lightgray;
+}
+
+#Library {
+  width: 84px;
+}
+#Library:hover {
+  content: url('images/new-Li.jpg');
+  width: 84px;
+}
+
+
+#img1 {
+  display: none;
+}
+
+#span1:hover + #img1 {
+  display: block;
+}
