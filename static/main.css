@@ -45,10 +45,10 @@
 }
 
 
-#img1 {
+#a1 #img1 {
   display: none;
 }
 
-#span1:hover + #img1 {
+#a1:hover #img1 {
   display: block;
 }
