@@ -10,12 +10,12 @@ import (
 )
 
 func myhandler(res http.ResponseWriter, req *http.Request) {
-	file, _ := ioutil.ReadFile("templates/new.tmpl.html")
+	file, _ := ioutil.ReadFile("templates/old.tmpl.html")
 
 	res.Write(file)}
 
 func RootHandler(res http.ResponseWriter, req *http.Request) {
-	file, _ := ioutil.ReadFile("templates/index.tmpl.html")
+	file, _ := ioutil.ReadFile("templates/new.tmpl.html")
 
 	res.Write(file)
 }
@@ -30,7 +30,7 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/",
 		http.FileServer(http.Dir("static"))))
 
-	http.HandleFunc("/new", myhandler)
+	http.HandleFunc("/old", myhandler)
 
 
 	port := os.Getenv("PORT")
