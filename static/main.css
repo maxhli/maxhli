@@ -60,3 +60,39 @@
 #a2:hover #img2 {
   display: block;
 }
+
+#a3 #img3 {
+  display: none;
+}
+
+#a3:hover #img3 {
+  display: block;
+}
+
+
+#a4 #img4 {
+  display: none;
+}
+
+#a4:hover #img4 {
+  display: block;
+}
+
+
+#a5 #img5 {
+  display: none;
+}
+
+#a5:hover #img5 {
+  display: block;
+}
+
+
+#a6 #img6 {
+  display: none;
+}
+
+#a6:hover #img6 {
+  display: block;
+}
+
