@@ -52,3 +52,11 @@
 #a1:hover #img1 {
   display: block;
 }
+
+#a2 #img2 {
+  display: none;
+}
+
+#a2:hover #img2 {
+  display: block;
+}
