@@ -1,5 +1,5 @@
 # maxhli
-Greater Nashville Chinese IT
+Personal page for Max Li
 
 This is the a simple web site using Heroku Go Web App. No database is used. 
 Every static web page is 
